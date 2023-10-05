@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.container-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1 .calculadora {
+    width: 500px;
+    padding: 90px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(5, 90px);
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-1 .calculadora .visor {
+    grid-column: 1/5;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.container-1 .calculadora button {
+    height: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.container-1 .calculadora button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
